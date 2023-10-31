@@ -16,6 +16,12 @@
 		F43952E42AF1709E0058B811 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43952E32AF1709E0058B811 /* CustomCell.swift */; };
 		F43952E62AF172E60058B811 /* ImageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43952E52AF172E60058B811 /* ImageDetailVC.swift */; };
 		F43952EE2AF174D80058B811 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43952ED2AF174D80058B811 /* ImageService.swift */; };
+		F43952F02AF177F60058B811 /* PasswordVС.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43952EF2AF177F60058B811 /* PasswordVС.swift */; };
+		F43952F22AF17AF30058B811 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43952F12AF17AF30058B811 /* PasswordManager.swift */; };
+		F43952F52AF17B580058B811 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F43952F42AF17B580058B811 /* KeychainSwift */; };
+		F43952F82AF17BBB0058B811 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = F43952F72AF17BBB0058B811 /* KeychainAccess */; };
+		F43952FA2AF1828E0058B811 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43952F92AF1828E0058B811 /* SettingsVC.swift */; };
+		F43952FC2AF1867F0058B811 /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43952FB2AF1867F0058B811 /* NewPasswordVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,10 @@
 		F43952E32AF1709E0058B811 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		F43952E52AF172E60058B811 /* ImageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailVC.swift; sourceTree = "<group>"; };
 		F43952ED2AF174D80058B811 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		F43952EF2AF177F60058B811 /* PasswordVС.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordVС.swift"; sourceTree = "<group>"; };
+		F43952F12AF17AF30058B811 /* PasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
+		F43952F92AF1828E0058B811 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		F43952FB2AF1867F0058B811 /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43952F82AF17BBB0058B811 /* KeychainAccess in Frameworks */,
+				F43952F52AF17B580058B811 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +96,9 @@
 			children = (
 				F43952412AE96CD20058B811 /* ImagesVC.swift */,
 				F43952E52AF172E60058B811 /* ImageDetailVC.swift */,
+				F43952EF2AF177F60058B811 /* PasswordVС.swift */,
+				F43952F92AF1828E0058B811 /* SettingsVC.swift */,
+				F43952FB2AF1867F0058B811 /* NewPasswordVC.swift */,
 				F43952EA2AF173F60058B811 /* Cell */,
 			);
 			path = Controllers;
@@ -112,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				F43952ED2AF174D80058B811 /* ImageService.swift */,
+				F43952F12AF17AF30058B811 /* PasswordManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -132,6 +148,10 @@
 			dependencies = (
 			);
 			name = MyDocuments;
+			packageProductDependencies = (
+				F43952F42AF17B580058B811 /* KeychainSwift */,
+				F43952F72AF17BBB0058B811 /* KeychainAccess */,
+			);
 			productName = MyDocuments;
 			productReference = F439523A2AE96CD20058B811 /* MyDocuments.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +180,10 @@
 				Base,
 			);
 			mainGroup = F43952312AE96CD20058B811;
+			packageReferences = (
+				F43952F32AF17B580058B811 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				F43952F62AF17BBB0058B811 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = F439523B2AE96CD20058B811 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,10 +213,14 @@
 			files = (
 				F43952422AE96CD20058B811 /* ImagesVC.swift in Sources */,
 				F439523E2AE96CD20058B811 /* AppDelegate.swift in Sources */,
+				F43952FC2AF1867F0058B811 /* NewPasswordVC.swift in Sources */,
 				F43952E42AF1709E0058B811 /* CustomCell.swift in Sources */,
 				F43952402AE96CD20058B811 /* SceneDelegate.swift in Sources */,
 				F43952E62AF172E60058B811 /* ImageDetailVC.swift in Sources */,
+				F43952F02AF177F60058B811 /* PasswordVС.swift in Sources */,
+				F43952F22AF17AF30058B811 /* PasswordManager.swift in Sources */,
 				F43952EE2AF174D80058B811 /* ImageService.swift in Sources */,
+				F43952FA2AF1828E0058B811 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +443,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F43952F32AF17B580058B811 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+		F43952F62AF17BBB0058B811 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F43952F42AF17B580058B811 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F43952F32AF17B580058B811 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		F43952F72AF17BBB0058B811 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F43952F62AF17BBB0058B811 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F43952322AE96CD20058B811 /* Project object */;
 }

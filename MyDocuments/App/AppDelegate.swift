@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  MyDocuments
-//
-//  Created by Malini Ka on 25.10.2023.
-//
-
 import UIKit
 
 @main
